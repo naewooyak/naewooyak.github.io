@@ -611,6 +611,12 @@ body {
         background-clip: text;
     }
 
+    .sticky-app-info .text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .brand-desc {
         display: none !important;
     }
@@ -629,9 +635,7 @@ body {
         padding: 0 var(--space-2);
     }
 
-    .brand-subtext {
-        display: none !important;
-    }
+
 
     .brand-title {
         font-size: var(--text-sm);
