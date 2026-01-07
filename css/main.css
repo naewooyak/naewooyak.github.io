@@ -485,6 +485,21 @@ body {
     transform: translateY(10px);
 }
 
+/* Typing cursor */
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background: currentColor;
+    margin-left: 6px;
+    vertical-align: bottom;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
 .fade-in-up {
     /* HOTFIX: 애니메이션 로딩 실패 시에도 콘텐츠가 보이도록 수정 */
     opacity: 1;
@@ -575,7 +590,7 @@ body {
 
     .section .heading-lg,
     .section .badge {
-        margin-top: var(--space-6) !important;
+        margin-top: var(--space-2) !important;
         margin-bottom: var(--space-4) !important;
     }
 
