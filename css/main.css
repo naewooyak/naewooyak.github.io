@@ -144,6 +144,16 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
+/* Spacing Utilities */
+.mt-4 { margin-top: var(--space-4); }
+.mt-8 { margin-top: var(--space-8); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-6 { margin-bottom: var(--space-6); }
+.mb-8 { margin-bottom: var(--space-8); }
+.my-4 { margin-top: var(--space-4); margin-bottom: var(--space-4); }
+.mt-6 { margin-top: var(--space-6); }
+
 
 /* -------------------------------------
    Section: Hero
@@ -555,8 +565,18 @@ body {
         text-align: left;
     }
 
-    .section {
-        padding: var(--space-10) 0;
+    body section.section,
+    body section.hero,
+    body section.trust-section,
+    body section.cta-section {
+        padding-top: var(--space-16) !important;
+        padding-bottom: var(--space-16) !important;
+    }
+
+    .section .heading-lg,
+    .section .badge {
+        margin-top: var(--space-8) !important;
+        margin-bottom: var(--space-4) !important;
     }
 
     .heading-xl {
