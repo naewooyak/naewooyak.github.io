@@ -52,7 +52,7 @@ body {
 }
 
 .equal-margin-title {
-    margin-top: var(--space-8);
+    margin-top: var(--space-6);
 }
 
 .heading-md {
@@ -597,7 +597,7 @@ body {
         margin-bottom: var(--space-4) !important;
     }
     .equal-margin-title {
-        margin-top: var(--space-4) !important;
+        margin-top: var(--space-2) !important;
     }
 
     .heading-xl {
