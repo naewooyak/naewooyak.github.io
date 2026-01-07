@@ -13,7 +13,7 @@ def test_landing_page_visuals(page: Page):
     # 3. 타이핑 애니메이션 동작 확인
     # 초기 로드 시 텍스트가 비어있거나 첫 번째 문구가 타이핑되기 시작함
     type_writer = page.locator(".type-writer")
-    
+
     # 텍스트가 동적으로 변하는지 확인 (최소 하나의 완성된 문구가 나타나는지)
     # data-text 속성에 있는 문구 중 하나가 나타나는지 확인
     expect(type_writer).to_contain_text(re.compile("스마트하게 관리하세요|사용기한 놓치지 마세요|중복 구매 막으세요"), timeout=10000)

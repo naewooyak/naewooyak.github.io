@@ -48,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   */
 
-
   // FAQ Accordion
   const faqItems = document.querySelectorAll('.faq-item');
 

@@ -158,7 +158,6 @@ body {
 .my-4 { margin-top: var(--space-4); margin-bottom: var(--space-4); }
 .mt-6 { margin-top: var(--space-6); }
 
-
 /* -------------------------------------
    Section: Hero
 ------------------------------------- */
@@ -243,7 +242,6 @@ body {
 .hero-phone-mockup:hover {
     transform: rotateY(0) rotateX(0);
 }
-
 
 .hero-actions {
     display: flex;
@@ -634,8 +632,6 @@ body {
     .hero-actions {
         padding: 0 var(--space-2);
     }
-
-
 
     .brand-title {
         font-size: var(--text-sm);
