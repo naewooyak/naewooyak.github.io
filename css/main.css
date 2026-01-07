@@ -575,7 +575,7 @@ body {
 
     .section .heading-lg,
     .section .badge {
-        margin-top: var(--space-8) !important;
+        margin-top: var(--space-6) !important;
         margin-bottom: var(--space-4) !important;
     }
 
