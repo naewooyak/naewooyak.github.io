@@ -51,6 +51,10 @@ body {
     margin-bottom: var(--space-4);
 }
 
+.equal-margin-title {
+    margin-top: var(--space-10);
+}
+
 .heading-md {
     font-size: var(--text-xl);
     font-weight: 700;
@@ -588,10 +592,12 @@ body {
         padding-bottom: var(--space-16) !important;
     }
 
-    .section .heading-lg,
     .section .badge {
         margin-top: var(--space-2) !important;
         margin-bottom: var(--space-4) !important;
+    }
+    .equal-margin-title {
+        margin-top: var(--space-6) !important;
     }
 
     .heading-xl {
