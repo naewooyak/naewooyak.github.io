@@ -89,6 +89,26 @@ document.addEventListener('DOMContentLoaded', () => {
     lastScrollY = currentScrollY;
   });
 
+  // Scroll to Top Button
+  const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+  window.addEventListener('scroll', () => {
+    // Show button after scrolling down 400px
+    if (window.scrollY > 400) {
+      scrollToTopBtn.classList.add('visible');
+    } else {
+      scrollToTopBtn.classList.remove('visible');
+    }
+  });
+
+  scrollToTopBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
   // OS Detection and Smart Download Function
   function getDownloadUrl() {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
