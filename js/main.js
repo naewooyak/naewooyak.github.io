@@ -91,14 +91,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Scroll to Top Button
   const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+  let scrollTimeout;
 
   window.addEventListener('scroll', () => {
-    // Show button after scrolling down 400px
-    if (window.scrollY > 400) {
-      scrollToTopBtn.classList.add('visible');
-    } else {
+    // Hide button immediately on scroll start
+    if (scrollToTopBtn.classList.contains('visible')) {
       scrollToTopBtn.classList.remove('visible');
     }
+
+    // Clear previous timeout to ensure it only runs after scrolling stops
+    clearTimeout(scrollTimeout);
+
+    scrollTimeout = setTimeout(() => {
+      // Show button after scrolling down 400px AND scrolling has stopped
+      if (window.scrollY > 400) {
+        scrollToTopBtn.classList.add('visible');
+      }
+    }, 150); // Adjust delay as needed (e.g., 150ms)
   });
 
   scrollToTopBtn.addEventListener('click', (e) => {
