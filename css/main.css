@@ -850,7 +850,7 @@ body {
 
     box-shadow: var(--shadow-lg);
 
-    z-index: 99;
+    z-index: 101;
 
     opacity: 0;
 
